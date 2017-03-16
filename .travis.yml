@@ -7,4 +7,4 @@ branches:
   - master
 
 before_script:
-  - npm run typescript
+  - npm run build
