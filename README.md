@@ -1,4 +1,7 @@
-[![TRAVIS](https://travis-ci.org/havsar/queue-limit.svg?branch=master)](https://travis-ci.org/havsar/queue-limit)
+[![Travis CI](https://img.shields.io/travis/havsar/limit-queue.svg)](https://travis-ci.org/havsar/limit-queue) 
+[![David](https://img.shields.io/david/havsar/limit-queue.svg)](https://david-dm.org/havsar/limit-queue)
+[![npm](https://img.shields.io/npm/v/limit-queue.svg)](https://www.npmjs.org/package/limit-queue)
+[![The MIT License](https://img.shields.io/npm/l/limit-queue.svg)](http://opensource.org/licenses/MIT)
 
 [![NPM](https://nodei.co/npm/queue-limit.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/queue-limit/)
 
@@ -17,7 +20,7 @@ Limit function calls with a timeout. Useful for rate limiting against services (
 
 # Install
 ```bash
-npm install --save node-ts-cache
+npm install --save limit-queue
 ```
 or
 ```bash
@@ -33,11 +36,11 @@ const queue = new RateLimitQueue(2, 5000);
 
 async function doSomething(): Promise<void> { 
     // poolMs will start on first Call
-    await queue.limit(function () => {
+    await queue.limit(function () {
          return "Response One";  
     }); 
 
-    await queue.limit(function () => {
+    await queue.limit(function () {
          return MyService.getUsers(); 
     }); //Stopped here for 5000 ms
 
