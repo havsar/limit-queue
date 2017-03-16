@@ -3,14 +3,14 @@
 [![npm](https://img.shields.io/npm/v/limit-queue.svg)](https://www.npmjs.org/package/limit-queue)
 [![The MIT License](https://img.shields.io/npm/l/limit-queue.svg)](http://opensource.org/licenses/MIT)
 
-[![NPM](https://nodei.co/npm/queue-limit.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/queue-limit/)
+[![NPM](https://nodei.co/npm/limit-queue.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/limit-queue/)
 
-# queue-limit
+# limit-queue
 Limit function calls with a timeout. Useful for rate limiting against services (e.g. TMDB). Supports promises.
 
 <!-- TOC depthTo:2 -->
 
-- [queue-limit](#queue-limit)
+- [limit-queue](#limit-queue)
 - [Install](#install)
 - [Usage](#usage)
 - [RateLimitQueue](#ratelimitqueue)
@@ -24,7 +24,7 @@ npm install --save limit-queue
 ```
 or
 ```bash
-yarn add queue-limit
+yarn add limit-queue
 ```
 
 # Usage
