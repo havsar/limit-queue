@@ -1,0 +1,30 @@
+{
+  "name": "limit-queue",
+  "version": "0.0.1",
+  "description": "Limited queue for functions",
+  "main": "src/index.js",
+  "scripts": {
+    "tdd": "mocha -w **/*.spec.js",
+    "build": "tsc -p .",
+    "test": "npm run build && mocha **/*.spec.js",
+    "prepublish": "tsc -p ."
+  },
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/havsar/limit-queue.git"
+  },
+  "keywords": [],
+  "author": "Himmet Avsar <avsar.himmet1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/havsar/limit-queue/issues"
+  },
+  "homepage": "https://github.com/havsar/limit-queue#readme",
+  "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.8",
+    "mocha": "^3.2.0",
+    "typescript": "^2.2.1"
+  }
+}
