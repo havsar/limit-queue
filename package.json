@@ -14,7 +14,14 @@
     "type": "git",
     "url": "git+https://github.com/havsar/limit-queue.git"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "queue",
+    "limit",
+    "ratelimit",
+    "promise limit",
+    "async limit"
+  ],
   "author": "Himmet Avsar <avsar.himmet1@gmail.com>",
   "license": "MIT",
   "bugs": {
