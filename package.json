@@ -19,8 +19,8 @@
     "queue",
     "limit",
     "ratelimit",
-    "promise limit",
-    "async limit"
+    "promise",
+    "async"
   ],
   "author": "Himmet Avsar <avsar.himmet1@gmail.com>",
   "license": "MIT",
