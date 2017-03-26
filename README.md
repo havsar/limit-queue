@@ -32,17 +32,17 @@ With promises or async/await
 ```ts
 import { RateLimitQueue } from "limit-queue";
 
-const queue = new RateLimitQueue(2, 5000);
+const queue = new RateLimitQueue(1, 5000);
 
 async function doSomething(): Promise<void> { 
-    // poolMs will start on first Call
+    // Pool will start on first call
     await queue.limit(function () {
          return "Response One";  
     }); 
 
     await queue.limit(function () {
          return MyService.getUsers(); 
-    }); //Stopped here for 5000 ms
+    }); 
 
     console.log("Done");
 }
